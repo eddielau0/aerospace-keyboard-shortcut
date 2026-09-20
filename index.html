@@ -3,36 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#10131a">
-  <title>AeroSpace shortcuts</title>
+  <meta name="theme-color" content="#e9e7e2">
+  <title>AeroSpace keyboard map</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="eyebrow">AEROSPACE / QUICK REFERENCE</div>
-    <h1>Keyboard map<span>.</span></h1>
-    <p>Every binding from this AeroSpace configuration, arranged for fast lookup.</p>
-    <div class="hero-meta"><span class="pill">⌥ = Alt</span><span class="pill">⌘ = Cmd</span><span class="pill">⌃ = Ctrl</span><span class="pill">⇧ = Shift</span><span class="source">Config snapshot · qwerty</span></div>
-  </header>
-
-  <main>
-    <section class="toolbar" aria-label="Filters">
-      <div class="mode-tabs" role="tablist"><button class="active" data-mode="main">Main mode <b></b></button><button data-mode="service">Service mode <b></b></button></div>
-      <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search a key, workspace, or action" aria-label="Search shortcuts"></label>
-    </section>
-
-    <section class="keyboard-panel">
-      <div class="section-heading"><div><span class="kicker">VISUAL MAP</span><h2 id="map-title">Main mode</h2></div><span class="hint">Click a key to filter</span></div>
-      <div id="keyboard" class="keyboard" aria-label="Keyboard shortcut map"></div>
-    </section>
-
-    <section class="shortcuts-panel">
-      <div class="section-heading"><div><span class="kicker">FULL INDEX</span><h2>Shortcut index</h2></div><span id="result-count" class="hint"></span></div>
-      <div id="cards" class="cards"></div>
-      <p id="empty" class="empty" hidden>No shortcuts match this search.</p>
-    </section>
+  <main class="stage">
+    <div class="mode-switch" role="tablist" aria-label="Binding mode">
+      <button class="active" data-mode="main">Main <b></b></button>
+      <button data-mode="service">Service <b></b></button>
+    </div>
+    <div id="keyboard" class="keyboard" aria-label="AeroSpace keyboard shortcut map"></div>
   </main>
-  <footer>Built as a static, offline reference · AeroSpace binding modes</footer>
   <script src="app.js"></script>
 </body>
 </html>
